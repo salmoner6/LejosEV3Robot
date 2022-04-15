@@ -49,6 +49,7 @@ public class Robot {
 		degATourner = 0;
 		//boussole = 0;
 		position = new OdometryPoseProvider(motors);
+		//always start run() in the left position
 		startXYH = new Pose(240, 28, 180);
 		butXY = new Point(0, 28);
 		position.setPose(startXYH);
@@ -285,6 +286,7 @@ public class Robot {
 		int etat = DETECTER;
 		degATourner = 90;
 		Pose start2XYH = new Pose(0, 78, 180);
+		//always start run2() in the center position
 		position.setPose(start2XYH);
 		rotate(-45);
 
